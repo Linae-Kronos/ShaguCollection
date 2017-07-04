@@ -19,6 +19,7 @@ function ChatFrame_OnEvent(event)
         if arg1 ~= ShaguChat_OldMessage then
           ShaguChat_OldMessage = arg1
           UIErrorsFrame:AddMessage("|r" .. arg2 .. ": " .. hilight .. arg1)
+          PlaySound("FriendJoinGame")
         end
       end
     end
